@@ -50,7 +50,8 @@ function generarQR() {
     var qr = new QRCode(qrContainer, {
       text: urlBase,
       width: 150,
-      height: 150
+      height: 150,
+      correctLevel: QRCode.CorrectLevel.L
     });
 
     var translate = document.getElementById('translate');
