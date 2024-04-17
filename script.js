@@ -7,28 +7,28 @@ function generarQR() {
     switch (ambiente) {
       case 'dev':
         link = 'appinnovauat.page.link';
-        web = 'https://dev-mi.auna.pe/';
+        web = 'https%3A//dev-mi.auna.pe/';
         apn = 'com.auna.int.appinnova';
         ibi = 'pe.com.auna.patientportal.develop';
         isi = '6476938155';
         break;
       case 'prd':
         link = 'auna.page.link';
-        web = 'https://mi.auna.pe/';
+        web = 'https%3A//mi.auna.pe/';
         apn = 'pe.com.auna.patientportal';
         ibi = 'pe.com.mdp.aunaapp';
         isi = '1188108872';
         break;
       case 'qas':
         link = 'appinnovauat.page.link';
-        web = 'https://stg-mi.auna.pe/';
+        web = 'https%3A//stg-mi.auna.pe/';
         apn = 'com.auna.test.appinnova';
         ibi = 'pe.com.auna.patientportal.stage';
         isi = '6477191730';
         break;
       case 'uat':
         link = 'appinnovauat.page.link';
-        web = 'https://uat-mi.auna.pe/';
+        web = 'https%3A//uat-mi.auna.pe/';
         apn = 'com.auna.uat.appinnova';
         ibi = 'pe.com.auna.patientportal.uat';
         isi = '6477191757';
@@ -36,7 +36,7 @@ function generarQR() {
       default:
         // Por defecto, usar valores de producción
         link = 'auna.page.link';
-        web = 'https://mi.auna.pe/';
+        web = 'https%3A//mi.auna.pe/';
         apn = 'pe.com.auna.patientportal';
         ibi = 'pe.com.mdp.aunaapp';
         isi = '1188108872';
