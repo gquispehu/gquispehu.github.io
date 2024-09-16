@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de Código QR</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="form-container">
+    <h2>Complete los datos</h2>
+    <form id="qrForm">
+      <label for="ambiente">Ambiente:</label>
+      <select id="ambiente" name="ambiente">
+        <option value="dev">Desarrollo (Dev)</option>
+        <option value="qas">Calidad (QAS)</option>
+        <option value="prd">Producción (PRD)</option>
+        <option value="uat">User Acceptance Testing (UAT)</option>
+      </select><br><br>
+      <label for="piso">Piso:</label>
+      <input type="number" id="piso" name="piso" min="1"><br><br>
+      <label for="clinica">Clínica:</label>
+      <input type="number" id="clinica" name="clinica" min="0" max="99"><br><br>
+      <button type="button" onclick="generarQR()">Generar QR</button>
+    </form>
+  </div>
+  <div class="qr-container">
+    <h2>Código QR</h2>
+    <p id="translate"></p>
+    <div id="qrCode"></div>
+  </div>
+</div>
+
+<script src="https://gonzaloqh.github.io/qrgenerator/qrcode.min.js?v=1.0"></script>
+<script src="https://gonzaloqh.github.io/qrgenerator/script.js?v=1.0"></script>
+</body>
+</html>
